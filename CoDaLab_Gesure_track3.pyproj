@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>a842cc43-58a6-4065-a788-12333aa22a55</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>MyRunDbn.py</StartupFile>
+    <SearchPath>TheanoDL\;.</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>CoDaLab_Gesure_track3</Name>
+    <RootNamespace>CoDaLab_Gesure_track3</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>-W ignore::DeprecationWarning</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ChalearnLAPEvaluation.py" />
+    <Compile Include="ChalearnLAPSample.py" />
+    <Compile Include="MyRunDbn.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Step1_DBN.py" />
+    <Compile Include="Step1_DBN_Structure2.py" />
+    <Compile Include="Step1_SK_Neutral_Realtime.py" />
+    <Compile Include="Step1_SK_realtime.py" />
+    <Compile Include="Step2_SK_Prediction.py" />
+    <Compile Include="Step3_SK_Test_prediction.py" />
+    <Compile Include="testMy.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Step1_transition_matrix.py" />
+    <Compile Include="TheanoDL\cA.py" />
+    <Compile Include="TheanoDL\convolutional_mlp.py" />
+    <Compile Include="TheanoDL\dA.py" />
+    <Compile Include="TheanoDL\DBN.py" />
+    <Compile Include="TheanoDL\DBN_MNIST.py" />
+    <Compile Include="TheanoDL\grbm.py" />
+    <Compile Include="TheanoDL\GRBM_DBN.py" />
+    <Compile Include="TheanoDL\LogisticRegressionMNIST.py" />
+    <Compile Include="TheanoDL\logistic_cg.py" />
+    <Compile Include="TheanoDL\logistic_sgd.py" />
+    <Compile Include="TheanoDL\Mean_DBN.py" />
+    <Compile Include="TheanoDL\mlp.py" />
+    <Compile Include="TheanoDL\rbm.py" />
+    <Compile Include="TheanoDL\rbm_gnumpy.py" />
+    <Compile Include="TheanoDL\rbm_mean.py" />
+    <Compile Include="TheanoDL\RBM_Pylearn2.py" />
+    <Compile Include="TheanoDL\rnnrbm.py" />
+    <Compile Include="TheanoDL\SdA.py" />
+    <Compile Include="TheanoDL\test.py" />
+    <Compile Include="TheanoDL\Tutorial.py" />
+    <Compile Include="TheanoDL\utils.py" />
+    <Compile Include="utils.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TheanoDL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="README.txt" />
+    <Content Include="SK_normalization.pkl" />
+    <Content Include="TheanoDL\grbm.pyc" />
+    <Content Include="TheanoDL\GRBM_DBN.pyc" />
+    <Content Include="TheanoDL\logistic_sgd.pyc" />
+    <Content Include="TheanoDL\mlp.pyc" />
+    <Content Include="TheanoDL\rbm.pyc" />
+    <Content Include="TheanoDL\Theano_Tutorial.pyproj" />
+    <Content Include="代码分析.doc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <PtvsTargetsFile>$(VSToolsPath)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "CoDaLab_Gesure_track3", "CoDaLab_Gesure_track3.pyproj", "{A842CC43-58A6-4065-A788-12333AA22A55}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Theano_Tutorial", "TheanoDL\Theano_Tutorial.pyproj", "{9F652EA6-CEE9-4214-9774-25D00CE2972C}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "RunTimeKinect", "RunTimeKinect\RunTimeKinect.pyproj", "{B91F0CD5-8999-4EA3-9A3F-C4375D111D56}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A842CC43-58A6-4065-A788-12333AA22A55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A842CC43-58A6-4065-A788-12333AA22A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F652EA6-CEE9-4214-9774-25D00CE2972C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F652EA6-CEE9-4214-9774-25D00CE2972C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B91F0CD5-8999-4EA3-9A3F-C4375D111D56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B91F0CD5-8999-4EA3-9A3F-C4375D111D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

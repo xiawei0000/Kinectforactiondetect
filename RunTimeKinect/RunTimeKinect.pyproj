@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>b91f0cd5-8999-4ea3-9a3f-c4375d111d56</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>PyKinectBodyGame.py</StartupFile>
+    <SearchPath>..\;C:\Anaconda\Lib\site-packages\theano;.;..\TheanoDL\</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>RunTimeKinect</Name>
+    <RootNamespace>RunTimeKinect</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="PyKinectBodyGame.py" />
+    <Compile Include="PyKinectRuntime.py" />
+    <Compile Include="PyKinectV2.py" />
+    <Compile Include="RunTimeKinect.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoDaLab_Gesure_track3.pyproj">
+      <Name>CoDaLab_Gesure_track3</Name>
+      <Project>{a842cc43-58a6-4065-a788-12333aa22a55}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\TheanoDL\Theano_Tutorial.pyproj">
+      <Name>Theano_Tutorial</Name>
+      <Project>{9f652ea6-cee9-4214-9774-25d00ce2972c}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
